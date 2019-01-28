@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>
+
+        <ui:composition template="./Template.xhtml">
+
+            <ui:define name="top">
+                
+                <h:graphicImage library="img" name="portada_GranCanyon.jpg" width="1245"/>
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>  
+                        <p:submenu label="Genka Xtrem">  
+                            <p:menuitem value="Hasiera" action="hasiera" />  
+                            <p:menuitem value="Zure txokoa" action="erabiltzaileInformazioa"/>  
+                        </p:submenu>
+                        <p:submenu label="Bidaiak">  
+                            <p:menuitem value="Ikusi" action="bidaiakListaratu" />    
+                        </p:submenu>
+                        <p:submenu label="Kirolak">  
+                            <p:menuitem value="Ikusi" action="kirolakListaratu" />    
+                        </p:submenu>
+                        <p:submenu label="Erreserbak">  
+                            <p:menuitem value="Ikusi" action="erreserbakListaratu" />    
+                        </p:submenu>
+                        
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    <p:dataTable id="taula" value="#{LangileaBean.listaratu()}" var="langile">
+
+                        <p:column>
+                            <f:facet name="header">Izena</f:facet>
+                            <h:outputText value="#{langile.ID}"/>
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">Izena</f:facet>
+                            <h:outputText value="#{langile.izena}"/>
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">Abizena</f:facet>
+                            <h:outputText value="#{langile.abizena}"/>
+                        </p:column>
+                        <p:column>
+                            <f:facet name="header">Telefonoa</f:facet>
+                            <h:outputText value="#{langile.abizena}"/>
+                        </p:column>
+                    </p:dataTable>                    
+                </h:form>                                           
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-abr-2012 18:20:04 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="dao.Gaixoa" table="GAIXOA" catalog="Anbulategia">
+        <id name="GSZ" type="int">
+            <column name="GSZ" length="9"/>
+            <generator class="assigned" />
+        </id>
+        <property name="izena" type="string">
+            <column name="IZENA" length="50" not-null="true" />
+        </property>
+        <property name="abizenak" type="string">
+            <column name="ABIZENAK" length="50" not-null="true" />
+        </property>
+        <property name="telefonoa" type="int">
+            <column name="TELEFONOA" length="9" not-null="true" />
+        </property>
+        <property name="pasahitza" type="string">
+            <column name="PASAHITZA" length="6" not-null="true" />
+        </property>
+        <property name="helbidea" type="string">
+            <column name="HELBIDEA" length="50" not-null="true" />
+        </property>
+        <set name="historialak" inverse="true">
+            <key>
+                <column name="GSZ" length="9" not-null="false" />
+            </key>
+            <one-to-many class="dao.Historiala" />
+        </set>
+           <set name="konsultak" inverse="true">
+            <key>
+                <column name="GSZ" length="9" not-null="false" />
+            </key>
+            <one-to-many class="dao.Konsulta" />
+        </set>
+    </class>
+</hibernate-mapping>

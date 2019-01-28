@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:1234/anbulategia</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">pomodoro</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="dao/Gaixoa.hbm.xml"/>
+    <mapping resource="dao/Erizaina.hbm.xml"/>
+    <mapping resource="dao/Idazkaria.hbm.xml"/>
+    <mapping resource="dao/Konsulta.hbm.xml"/>
+    <mapping resource="dao/Konsulta_Orokorra.hbm.xml"/>
+    <mapping resource="dao/Konsulta_Berezia.hbm.xml"/>
+    <mapping resource="dao/Langilea.hbm.xml"/>
+    <mapping resource="dao/Sendagile_Berezia.hbm.xml"/>
+    <mapping resource="dao/Sendagile_Orokorra.hbm.xml"/>
+    <mapping resource="dao/Bolantea.hbm.xml"/>
+    <mapping resource="dao/Espezialista_Txostena.hbm.xml"/>
+    <mapping resource="dao/Historiala.hbm.xml"/>
+    <mapping resource="dao/Froga.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

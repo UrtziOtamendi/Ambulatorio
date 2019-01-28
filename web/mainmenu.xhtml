@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      
+<h:head>
+	<title>Anbulategia - Menu nagusia</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/form.css"/>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+</h:head>
+<h:body>
+	<p:growl id="messages"/>
+ 
+    <p:menubar>
+        <p:submenu label="Txostenak" icon="ui-icon-document">
+            <p:menuitem value="Historialak" url="#" />
+            <p:menuitem value="Bolantea eta txostena" url="#" />
+            <p:menuitem value="Froga zerrenda" url="#" />
+            <p:menuitem value="Espezialistaren txostena" url="#" />
+            <p:menuitem value="Sendagilearen ordutegiak" url="#" />
+        </p:submenu>
+ 
+        <p:menuitem value="Kontsulta eskatu" url="#" icon="fa-user-plus" />
+ 
+       
+            <p:commandButton type="button" value="Logout" icon="fa-sign-out" />
+       
+    </p:menubar>
+</h:body>
+</html>

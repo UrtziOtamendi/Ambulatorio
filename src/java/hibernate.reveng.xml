@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="Anbulategia"/>
+  <table-filter match-name="ARRUNTA"/>
+  <table-filter match-name="BAJA_TXOSTENA"/>
+  <table-filter match-name="BEREZIA"/>
+  <table-filter match-name="BOLANTEA"/>
+  <table-filter match-name="ERIZAINA"/>
+  <table-filter match-name="ERREZETA"/>
+  <table-filter match-name="ESPEZIALISTA_TXOSTENA"/>
+  <table-filter match-name="FROGA_ZERRENDA"/>
+  <table-filter match-name="GAIXOA"/>
+  <table-filter match-name="GELA"/>
+  <table-filter match-name="HISTORIALA"/>
+  <table-filter match-name="IDAZKARIA"/>
+  <table-filter match-name="JUBILATUA"/>
+  <table-filter match-name="KONSULTA"/>
+  <table-filter match-name="LANGILEA"/>
+  <table-filter match-name="LARRIALDI"/>
+  <table-filter match-name="LARRIALDI_TXOSTENA"/>
+  <table-filter match-name="ORDUTEGIA"/>
+  <table-filter match-name="OROKORRA"/>
+  <table-filter match-name="SENDAGILE_BEREZIA"/>
+  <table-filter match-name="SENDAGILE_OROKORRA"/>
+  <table-filter match-name="SENDAGILEA"/>
+  <table-filter match-name="TENSIO_TXARTELA"/>
+</hibernate-reverse-engineering>

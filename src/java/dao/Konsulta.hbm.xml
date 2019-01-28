@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-abr-2012 18:20:04 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="dao.Konsulta" table="KONSULTA" catalog="Anbulategia">
+        <id name="Zenbakia" type="int">
+            <column name="ZENBAKIA" length="9"/>
+            <generator class="assigned" />
+        </id>
+        <property name="ordua" type="string">
+            <column name="ORDUA" length="50" not-null="true" />
+        </property>
+        <property name="eguna" type="date">
+            <column name="EGUNA" length="50" not-null="true" />
+        </property>
+       
+        <many-to-one name="gaixoa" class="dao.Gaixoa" fetch="select">
+            <column name="GSZ" not-null="true" />
+        </many-to-one>
+       
+    </class>
+</hibernate-mapping>

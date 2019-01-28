@@ -1,0 +1,15 @@
+*{
+	background: #1E90FF;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+body{
+	text-align: center;
+}
+
+.title{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 10px; 
+	color: #000000;
+}

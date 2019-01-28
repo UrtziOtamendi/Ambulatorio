@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+      
+<h:head>
+	<title>Anbulategia - Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/form.css"/>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+</h:head>
+<h:body>
+	<div class="title">
+		Anbulategia
+	</div>
+	<br />
+	<br />
+	<div>
+		<h:form>
+			<h:outputLabel for="usernameInput" value="Izena:" />
+			<h:inputText id="usernameInput" value="#{loginBean.username}" required="true" />
+			<br />
+			<h:outputLabel for="passwordInput" value="Pasahitza:" />
+			<h:inputSecret id="passwordInput" value="#{loginBean.password}"  required="true" />
+			<br />
+			<h:commandButton  value="Login" action="#{loginBean.login()}"/>
+		</h:form>
+	</div>	
+</h:body>
+</html>
